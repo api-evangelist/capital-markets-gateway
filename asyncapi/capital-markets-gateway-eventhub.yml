@@ -1,0 +1,73 @@
+generated: '2026-08-09'
+method: searched
+source: https://cmgx.io/workflow-management/
+spec_type: none
+spec_published: false
+name: CMG XC EventHub
+summary: >-
+  Capital Markets Gateway advertises a real-time event notification surface for the CMG XC workflow
+  platform, called EventHub. It is documented only as prose in the public product FAQ — no AsyncAPI
+  document, event catalog, channel list, payload schema, subscription reference or endpoint is
+  published anywhere on a public host.
+delivery: >-
+  Described by CMG as "real-time event notifications ... delivered via EventHub", consumed by internal
+  trade processing and OMS platforms for straight-through processing. The transport (webhook callback,
+  message broker, or streaming subscription) is not stated publicly.
+events:
+- name: trade release
+  evidence_quote: >-
+    "Real-time event notifications via EventHub connect platform events such as trade release,
+    allocation updates and attestation status changes directly into internal workflows."
+  source: https://cmgx.io/workflow-management/
+- name: allocation updates
+  evidence_quote: >-
+    "Real-time event notifications via EventHub connect platform events such as trade release,
+    allocation updates and attestation status changes directly into internal workflows."
+  source: https://cmgx.io/workflow-management/
+- name: attestation status changes
+  evidence_quote: >-
+    "Real-time event notifications via EventHub connect platform events such as trade release,
+    allocation updates and attestation status changes directly into internal workflows."
+  source: https://cmgx.io/workflow-management/
+related_surfaces:
+- name: CMG XC REST API
+  note: >-
+    "Real-time event notifications are delivered via EventHub, enabling STP integration with internal
+    trade processing and OMS platforms. The platform is accessible via the web app and REST API."
+  source: https://cmgx.io/workflow-management/
+- name: CMG DataLab Real-Time Feed (GraphQL API)
+  note: >-
+    A separate data surface. "Real-time data feeds support automated downstream triggers" and
+    "event-driven alerts for launches, amendments and pricings are also supported."
+  source: https://cmgx.io/data-insights/
+gap:
+  what_is_missing:
+  - No AsyncAPI document at any public URL.
+  - No published channel, topic or event-name catalog beyond the three examples quoted above.
+  - No payload schemas for any event.
+  - No public subscription, delivery, retry or signature/verification documentation.
+  who_can_fix_it: provider
+  remedy: >-
+    Publish an AsyncAPI document for EventHub at a stable public URL, with a channel per platform
+    event and a message schema per payload. The three event kinds CMG already names in its own FAQ are
+    enough to start; an integrator currently cannot see the event names, the payload shape, or how
+    delivery is authenticated without becoming a customer first.
+x-evidence:
+  fetched: '2026-08-09'
+  urls:
+  - url: https://cmgx.io/workflow-management/
+    status: 200
+  - url: https://cmgx.io/data-insights/
+    status: 200
+  searched_and_missed:
+  - url: https://cmgx.io/asyncapi.yaml
+    status: 404
+  - url: https://cmgx.io/asyncapi.json
+    status: 404
+  - url: https://cmgx.io/events
+    status: 404
+  - url: https://cmgx.io/webhooks
+    status: 404
+  - url: https://docs.cmgx.io/
+    status: 302
+    note: redirects to https://id.cmgecm.com/document360 (customer login)

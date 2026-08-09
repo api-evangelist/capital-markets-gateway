@@ -42,5 +42,16 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Capital Markets Gateway is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Capital Markets Gateway (CMG) is a New York headquartered financial technology company connecting the
+buy side and the sell side across the equity capital markets (ECM) offering process. Its products are
+CMG XC (ECM deal-lifecycle workflow management) and CMG DataLab (ECM data and analytics).
+
+CMG names three programmatic surfaces in its own public FAQs — a DataLab Real-Time Feed (GraphQL API),
+a CMG XC REST API, and EventHub real-time event notifications — but publishes no public API reference,
+endpoint or machine-readable contract for any of them. `docs.cmgx.io` redirects to a customer identity
+login. See `x-coverage` in `apis.yml` for the probed evidence.
+
+- https://cmgx.io/
+- https://cmgx.io/data-insights/
+- https://cmgx.io/workflow-management/
+- https://github.com/capital-markets-gateway
