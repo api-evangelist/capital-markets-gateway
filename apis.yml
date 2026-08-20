@@ -23,6 +23,16 @@ created: '2026-08-09'
 modified: '2026-08-09'
 tags:
 - Company
+- Financial-Services
+- Capital Markets
+- Equity Capital Markets
+- Market Data
+- Data Intelligence
+- Workflow Management
+- Investment Banking
+- Fintech
+tags_raw:
+- Company
 - Financial Services
 - Capital Markets
 - Equity Capital Markets
@@ -76,6 +86,10 @@ apis:
     reference is published.
   humanURL: https://cmgx.io/workflow-management/
   tags:
+  - Event
+  - Streaming
+  - Equity Capital Markets
+  tags_raw:
   - Events
   - Streaming
   - Equity Capital Markets
