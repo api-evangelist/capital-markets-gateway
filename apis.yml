@@ -12,6 +12,17 @@ description: >-
   real-time event notifications for straight-through processing into OMS and trade-processing systems —
   but publishes no public API reference, endpoint or machine-readable contract for any of them. The
   documentation host redirects to a customer identity login.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cmgx.io/wp-content/uploads/2024/11/CMG_URLPreview_2024-11-06-min-1-scaled.jpg
 url: https://raw.githubusercontent.com/api-evangelist/capital-markets-gateway/refs/heads/main/apis.yml
 x-type: company
