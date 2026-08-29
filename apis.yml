@@ -25,6 +25,9 @@ deliveryModel:
   method: derived
 image: https://cmgx.io/wp-content/uploads/2024/11/CMG_URLPreview_2024-11-06-min-1-scaled.jpg
 url: https://raw.githubusercontent.com/api-evangelist/capital-markets-gateway/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "CMG names three programmatic surfaces in its own public FAQs — a DataLab Real-Time Feed (GraphQL API), a CMG XC REST API covering setup through allocation and post-trade, and EventHub real-time event "
 x-type: company
 x-source: harvest:secondary-market
 x-tier: profiled
