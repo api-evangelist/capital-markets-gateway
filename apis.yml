@@ -1,17 +1,16 @@
 aid: capital-markets-gateway
 name: Capital Markets Gateway
-description: >-
-  Capital Markets Gateway (CMG) is a New York headquartered financial technology company that connects
-  the buy side and the sell side across the equity capital markets (ECM) offering process. Its two
-  products are CMG XC, a workflow-management platform carrying the full ECM deal lifecycle — offering
+description: Capital Markets Gateway (CMG) is a New York headquartered financial technology company that
+  connects the buy side and the sell side across the equity capital markets (ECM) offering process. Its
+  two products are CMG XC, a workflow-management platform carrying the full ECM deal lifecycle — offering
   setup, termsheet publication, a consolidated and de-duplicated order book, bookbuilding, allocations,
   designations and trade release — and CMG DataLab, an ECM data and analytics service spanning 20+ years
   and 60,000+ equity transactions across 50+ regions, with 550+ deal, structure and performance metrics
-  per deal. CMG names three programmatic surfaces in its own public FAQs — a DataLab Real-Time Feed
-  (GraphQL API), a CMG XC REST API covering setup through allocation and post-trade, and EventHub
-  real-time event notifications for straight-through processing into OMS and trade-processing systems —
-  but publishes no public API reference, endpoint or machine-readable contract for any of them. The
-  documentation host redirects to a customer identity login.
+  per deal. CMG names three programmatic surfaces in its own public FAQs — a DataLab Real-Time Feed (GraphQL
+  API), a CMG XC REST API covering setup through allocation and post-trade, and EventHub real-time event
+  notifications for straight-through processing into OMS and trade-processing systems — but publishes
+  no public API reference, endpoint or machine-readable contract for any of them. The documentation host
+  redirects to a customer identity login.
 deliveryModel:
   model: saas
   open_source: false
@@ -39,7 +38,9 @@ image: https://cmgx.io/wp-content/uploads/2024/11/CMG_URLPreview_2024-11-06-min-
 url: https://raw.githubusercontent.com/api-evangelist/capital-markets-gateway/refs/heads/main/apis.yml
 x-api-posture: no-product-api
 x-api-posture-basis: observed
-x-api-posture-note: "CMG names three programmatic surfaces in its own public FAQs — a DataLab Real-Time Feed (GraphQL API), a CMG XC REST API covering setup through allocation and post-trade, and EventHub real-time event "
+x-api-posture-note: 'CMG names three programmatic surfaces in its own public FAQs — a DataLab Real-Time
+  Feed (GraphQL API), a CMG XC REST API covering setup through allocation and post-trade, and EventHub
+  real-time event '
 x-type: company
 x-source: harvest:secondary-market
 x-tier: profiled
@@ -68,14 +69,13 @@ tags_raw:
 - Investment Banking
 - Fintech
 apis:
-- aid: capital-markets-gateway-datalab-real-time-feed
+- aid: capital-markets-gateway:capital-markets-gateway-datalab-real-time-feed
   name: CMG DataLab Real-Time Feed (GraphQL API)
-  description: >-
-    Schema-driven GraphQL access to CMG's live and historical ECM dataset. Per CMG's published FAQ the
-    feed lets teams "query specific fields across deals, participants, terms and activity through a
-    single flexible endpoint" and stream live ECM data into internal data warehouses, dashboards,
-    pricing models, risk systems and analytics tools. No public endpoint, SDL or reference is
-    published; access is arranged through CMG and documentation sits behind a customer login.
+  description: Schema-driven GraphQL access to CMG's live and historical ECM dataset. Per CMG's published
+    FAQ the feed lets teams "query specific fields across deals, participants, terms and activity through
+    a single flexible endpoint" and stream live ECM data into internal data warehouses, dashboards, pricing
+    models, risk systems and analytics tools. No public endpoint, SDL or reference is published; access
+    is arranged through CMG and documentation sits behind a customer login.
   humanURL: https://cmgx.io/data-insights/
   tags:
   - GraphQL
@@ -85,14 +85,13 @@ apis:
   properties:
   - type: x-access
     url: https://cmgx.io/book-a-demo/
-- aid: capital-markets-gateway-xc-rest-api
+- aid: capital-markets-gateway:capital-markets-gateway-xc-rest-api
   name: CMG XC REST API
-  description: >-
-    REST API for the CMG XC workflow platform. Per CMG's published FAQ it provides "systemic support of
-    the full ECM deal lifecycle from setup through allocation and post-trade" and "integrates with CRM,
-    OMS and trade processing systems for straight-through processing with buy-side participants."
-    Allocations can be released and consumed electronically via the REST API. No public endpoint,
-    OpenAPI or reference is published.
+  description: REST API for the CMG XC workflow platform. Per CMG's published FAQ it provides "systemic
+    support of the full ECM deal lifecycle from setup through allocation and post-trade" and "integrates
+    with CRM, OMS and trade processing systems for straight-through processing with buy-side participants."
+    Allocations can be released and consumed electronically via the REST API. No public endpoint, OpenAPI
+    or reference is published.
   humanURL: https://cmgx.io/workflow-management/
   tags:
   - REST
@@ -102,14 +101,12 @@ apis:
   properties:
   - type: x-access
     url: https://cmgx.io/book-a-demo/
-- aid: capital-markets-gateway-eventhub
+- aid: capital-markets-gateway:capital-markets-gateway-eventhub
   name: CMG XC EventHub
-  description: >-
-    Real-time event notification surface for CMG XC. Per CMG's published FAQ, "real-time event
+  description: Real-time event notification surface for CMG XC. Per CMG's published FAQ, "real-time event
     notifications are delivered via EventHub, enabling STP integration with internal trade processing
-    and OMS platforms," connecting platform events such as trade release, allocation updates and
-    attestation status changes into internal workflows. No AsyncAPI, event catalog or subscription
-    reference is published.
+    and OMS platforms," connecting platform events such as trade release, allocation updates and attestation
+    status changes into internal workflows. No AsyncAPI, event catalog or subscription reference is published.
   humanURL: https://cmgx.io/workflow-management/
   tags:
   - Event
@@ -164,11 +161,10 @@ x-enrichment:
 x-coverage:
   state: gated
   reason: customer-only-docs
-  detail: >-
-    CMG names three programmatic surfaces in its own public FAQs — a DataLab Real-Time Feed (GraphQL
-    API), a CMG XC REST API and EventHub event notifications — but its documentation host
-    docs.cmgx.io 302s to a Document360 knowledge base behind the id.cmgecm.com customer identity gate,
-    so no endpoint, GraphQL SDL, OpenAPI or event catalog is reachable without an active tenant.
+  detail: CMG names three programmatic surfaces in its own public FAQs — a DataLab Real-Time Feed (GraphQL
+    API), a CMG XC REST API and EventHub event notifications — but its documentation host docs.cmgx.io
+    302s to a Document360 knowledge base behind the id.cmgecm.com customer identity gate, so no endpoint,
+    GraphQL SDL, OpenAPI or event catalog is reachable without an active tenant.
   evidence:
   - url: https://docs.cmgx.io/
     status: 302
