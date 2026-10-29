@@ -64,16 +64,97 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Capital Markets Gateway (CMG) is a New York headquartered financial technology company connecting the
-buy side and the sell side across the equity capital markets (ECM) offering process. Its products are
-CMG XC (ECM deal-lifecycle workflow management) and CMG DataLab (ECM data and analytics).
+Capital Markets Gateway (CMG) is a New York headquartered financial technology company that connects the buy side and the sell side across the equity capital markets (ECM) offering process. Its two products are CMG XC, a workflow-management platform carrying the full ECM deal lifecycle — offering setup, termsheet publication, a consolidated and de-duplicated order book, bookbuilding, allocations, designations and trade release — and CMG DataLab, an ECM data and analytics service spanning 20+ years and 60,000+ equity transactions across 50+ regions, with 550+ deal, structure and performance metrics per deal. CMG names three programmatic surfaces in its own public FAQs — a DataLab Real-Time Feed (GraphQL API), a CMG XC REST API covering setup through allocation and post-trade, and EventHub real-time event notifications for straight-through processing into OMS and trade-processing systems — but publishes no public API reference, endpoint or machine-readable contract for any of them. The documentation host redirects to a customer identity login.
 
-CMG names three programmatic surfaces in its own public FAQs — a DataLab Real-Time Feed (GraphQL API),
-a CMG XC REST API, and EventHub real-time event notifications — but publishes no public API reference,
-endpoint or machine-readable contract for any of them. `docs.cmgx.io` redirects to a customer identity
-login. See `x-coverage` in `apis.yml` for the probed evidence.
+**Areas:** Company · Financial Services · Capital Markets · Equity Capital Markets · Market Data · Data Intelligence · Workflow Management · Investment Banking · Fintech
 
-- https://cmgx.io/
-- https://cmgx.io/data-insights/
-- https://cmgx.io/workflow-management/
-- https://github.com/capital-markets-gateway
+## Capital Markets Gateway on APIs.io
+
+Everything profiled for Capital Markets Gateway is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/capital-markets-gateway/](https://apis.io/providers/capital-markets-gateway/)** — or go straight to one of the APIs or properties below.
+
+### APIs (3)
+
+- [CMG DataLab Real-Time Feed (GraphQL API)](https://apis.io/apis/capital-markets-gateway/capital-markets-gateway-datalab-real-time-feed/) — Schema-driven GraphQL access to CMG's live and historical ECM dataset. Per CMG's published FAQ the feed lets teams "query specific fields across deals,…
+- [CMG XC REST API](https://apis.io/apis/capital-markets-gateway/capital-markets-gateway-xc-rest-api/) — REST API for the CMG XC workflow platform. Per CMG's published FAQ it provides "systemic support of the full ECM deal lifecycle from setup through…
+- [CMG XC EventHub](https://apis.io/apis/capital-markets-gateway/capital-markets-gateway-eventhub/) — Real-time event notification surface for CMG XC. Per CMG's published FAQ, "real-time event notifications are delivered via EventHub, enabling STP…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Capital Markets Gateway Eventhub](https://apis.io/asyncapis/capital-markets-gateway/capital-markets-gateway-eventhub/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Capital Markets Gateway Domain Security](https://apis.io/security/capital-markets-gateway/capital-markets-gateway-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://cmgx.io/)
+- [Sign up](https://cmgx.io/sign-up/)
+- [Support](https://cmgx.io/contact/)
+- [Blog](https://cmgx.io/news-insights/)
+- [Terms of service](https://cmgx.io/terms-of-use/)
+- [Privacy policy](https://cmgx.io/privacy-policy/)
+- [GitHub](https://github.com/capital-markets-gateway)
+
+## API Evangelist rating
+
+**Kin Score 28.1** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 69.6 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 34.2 |
+
+**Agent readiness 17.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.6** — Securities & Market Data
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/capital-markets-gateway/](https://apis.io/providers/capital-markets-gateway/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Capital Markets Gateway: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/capital-markets-gateway/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
